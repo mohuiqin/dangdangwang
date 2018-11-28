@@ -1,3 +1,5 @@
+https://github.com/mohuiqin/dangdangwang/blob/master/books.png
+
 # dangdang
 
 > A Vue.js project
