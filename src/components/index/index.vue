@@ -335,7 +335,7 @@
 </template>
 
 <script>
-	var moslide=document.getElementById('moslide');
+
 	var num=0;
 	var timer;
 	function gogo(){
