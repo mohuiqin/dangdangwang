@@ -335,20 +335,6 @@
 </template>
 
 <script>
-
-	var num=0;
-	var timer;
-	function gogo(){
-		timer=setInterval(function(){
-			num++;
-			if(num>5) num=0;
-			else{
-				moslide.style.top=-num*56+'px';
-			}
-		},3000)
-	}
-	gogo();
-	
 	export default{
 		data(){
 			return{
@@ -359,6 +345,18 @@
 			}
 		},
 		mounted(){
+      (function gogo(){
+				var num=0;
+				var timer;
+				timer=setInterval(function(){
+					num++;
+					if(num>5) num=0;
+					else{
+						moslide.style.top=-num*56+'px';
+					}
+				},3000)
+			})();
+    
 			var a=this;//箭头函数和定时器的this指向window
 			setInterval(function(){
 				let endtimes=24*60*60//结束的秒数
